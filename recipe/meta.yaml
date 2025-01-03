@@ -5,9 +5,8 @@ package:
   version: {{ version }}
 
 source:
-  fn: cgsn_processing-{{ version }}.tar.gz
   url: https://bitbucket.org/ooicgsn/cgsn-processing/get/master.tar.gz
-  sha256: 78fef208482d6c00d3702c557740c179e25cf2f7c95486d219addd1360f8b610
+  sha256: ce7863e43fa413ba4ecf588ad65312bd3cfe97324514699d80bf0f939f5e6b8f
   patches:
     - pkg.patch
 
