@@ -1,4 +1,4 @@
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: cgsn_processing
@@ -7,8 +7,6 @@ package:
 source:
   url: https://bitbucket.org/ooicgsn/cgsn-processing/get/master.tar.gz
   sha256: ce7863e43fa413ba4ecf588ad65312bd3cfe97324514699d80bf0f939f5e6b8f
-  patches:
-    - pkg.patch
 
 build:
   number: 1
