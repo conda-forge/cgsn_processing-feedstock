@@ -1,27 +1,25 @@
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: cgsn_processing
   version: {{ version }}
 
 source:
-  fn: cgsn_processing-{{ version }}.tar.gz
   url: https://bitbucket.org/ooicgsn/cgsn-processing/get/master.tar.gz
-  sha256: 78fef208482d6c00d3702c557740c179e25cf2f7c95486d219addd1360f8b610
-  patches:
-    - pkg.patch
+  sha256: ce7863e43fa413ba4ecf588ad65312bd3cfe97324514699d80bf0f939f5e6b8f
 
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
     - setuptools
+    - pip
   run:
-    - python
+    - python >={{ python_min }}
     - gsw >=3.0.3
     - jinja2
     - munch >=2.1.0
@@ -34,6 +32,8 @@ requirements:
     - scipy >=0.15.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - cgsn_processing
 
