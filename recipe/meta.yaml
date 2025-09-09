@@ -1,12 +1,12 @@
-{% set version = "0.1.1" %}
+{% set version = "0.2.1" %}
 
 package:
   name: cgsn_processing
   version: {{ version }}
 
 source:
-  url: https://bitbucket.org/ooicgsn/cgsn-processing/get/master.tar.gz
-  sha256: ce7863e43fa413ba4ecf588ad65312bd3cfe97324514699d80bf0f939f5e6b8f
+  url: https://github.com/cwingard/cgsn-processing/archive/refs/tags/{{ version }}.tar.gz
+  sha256: 79d81d77c8ffd9128dbaf43e709c1867d7767c2590b871c3502a42f2bde8eecb
 
 build:
   number: 0
@@ -20,25 +20,31 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - gsw >=3.0.3
+    - beautifulsoup4
+    - gsw
+    - h5netcdf
     - jinja2
-    - munch >=2.1.0
-    - netcdf4
-    - numpy >=1.9.2
+    - munch
+    - netCDF4
+    - numpy
     - pandas
-    - pyaxiom
+    - ppigrf
     - pytz
     - requests
-    - scipy >=0.15.1
+    - scipy
+    - xarray
 
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - cgsn_processing
+  commands:
+    - pip check
 
 about:
-  home: https://bitbucket.org/ooicgsn/cgsn-processing
+  home: https://github.com/cwingard/cgsn-processing
   license: MIT
   license_file: LICENSE.txt
   summary: 'processing modules for converting JSON data from the OOI moorings'
