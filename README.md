@@ -3,7 +3,7 @@ About cgsn_processing-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cgsn_processing-feedstock/blob/main/LICENSE.txt)
 
-Home: https://bitbucket.org/ooicgsn/cgsn-processing
+Home: https://github.com/cwingard/cgsn-processing
 
 Package license: MIT
 
@@ -27,7 +27,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-cgsn_processing-green.svg)](https://anaconda.org/conda-forge/cgsn_processing) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cgsn_processing.svg)](https://anaconda.org/conda-forge/cgsn_processing) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cgsn_processing.svg)](https://anaconda.org/conda-forge/cgsn_processing) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cgsn_processing.svg)](https://anaconda.org/conda-forge/cgsn_processing) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cgsn__processing-green.svg)](https://anaconda.org/conda-forge/cgsn_processing) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cgsn_processing.svg)](https://anaconda.org/conda-forge/cgsn_processing) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cgsn_processing.svg)](https://anaconda.org/conda-forge/cgsn_processing) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cgsn_processing.svg)](https://anaconda.org/conda-forge/cgsn_processing) |
 
 Installing cgsn_processing
 ==========================
